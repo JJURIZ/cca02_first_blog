@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    position: absolute;
+    flex-direction: row;
+    border: 3px solid purple;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.under {
+    max-width: 100%;
+    z-index: -1;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .over {
+    position: absolute;
+    max-width: 95%;
+    top: 100px;
+    left: 10px;
+    z-index: 1;
+    object-fit: contain;
+  }
+
+.main-content {
+    display: flex;
+}
+
+article {
+    flex: 4
+}
+
+aside {
+    flex: 1
+}
+
+footer {
+    clear: all;
+}
